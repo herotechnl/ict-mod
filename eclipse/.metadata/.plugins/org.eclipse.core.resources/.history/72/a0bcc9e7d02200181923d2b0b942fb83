@@ -1,0 +1,6 @@
+item.DCPU.name=desktop CPU
+item.plastic.name=plastic
+item.Dmoederbord.name=desktop motherboard
+item.Dram.name=desktop ram
+
+tile.BlockLaptop.name=Laptop

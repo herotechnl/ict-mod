@@ -1,0 +1,70 @@
+package nl.herotech.ICTMOD;
+
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.item.Item;
+
+@Mod(modid = "ict", name = "ICTMOD", version = "1.0")
+public class ICTMOD {
+	//items
+	public static Item plastic;
+	public static Item chip;
+	
+		//items desktop
+		public static Item DCPU;
+		public static Item Dbehuizing;
+		public static Item DMoederbord;
+		public static Item Dram;
+	
+	
+	//blocks
+	public static Block blockLaptop;
+	
+	@EventHandler
+	public void preInit(FMLPreInitializationEvent event) {
+		//item/block init an reg
+		//config handling
+		
+		//items
+		plastic = new plastic().setUnlocalizedName("plastic").setTextureName("ict:plastic");
+		chip = new chip().setUnlocalizedName("chip");
+		
+			//items desktop
+			DCPU = new DCPU().setUnlocalizedName("DCPU").setTextureName("ict:dcpu");
+			DMoederbord = new Dmoederbord().setUnlocalizedName("Dmoederbord").setTextureName("ict:dmoed");
+			Dram = new Dram().setUnlocalizedName("Dram");
+		
+		
+		//blocks
+		blockLaptop = new BlockLaptop(Material.iron).setBlockName("BlockLaptop");
+		
+		//GRitems
+		GameRegistry.registerItem(plastic, plastic.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(chip, chip.getUnlocalizedName().substring(5));
+		
+			//GRitems desktop
+			GameRegistry.registerItem(DCPU, DCPU.getUnlocalizedName().substring(5));
+			GameRegistry.registerItem(DMoederbord, DMoederbord.getUnlocalizedName().substring(5));
+			GameRegistry.registerItem(Dram, Dram.getUnlocalizedName().substring(5));
+		
+		
+		//GRblocks
+		GameRegistry.registerBlock(blockLaptop, blockLaptop.getUnlocalizedName().substring(5));
+		System.out.println(blockLaptop.getUnlocalizedName().substring(5));
+	}
+	@EventHandler
+	public void Init(FMLInitializationEvent event) {
+		//proxy, tileentity, entity gui and pacet reg
+	}
+	
+	@EventHandler
+	public void postInit(FMLPostInitializationEvent event) {
+		//proxy, tileentity, entity gui and pacet reg
+	}
+}

@@ -1,0 +1,10 @@
+item.plastic.name=plastic
+item.chip.name=chip
+item.PCB.name=PCB
+
+item.Dmoederbord.name=desktop motherboard
+item.Dram.name=desktop ram
+item.DCPU.name=desktop CPU
+
+
+tile.BlockLaptop.name=Laptop

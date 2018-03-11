@@ -1,0 +1,12 @@
+item.pk.name=plastic granules
+item.plastic.name=plastic
+item.chip.name=chip
+item.PCB.name=PCB
+item.Dmoederbord.name=motherboard
+item.vc.name=video card
+
+item.Dram.name=desktop ram
+item.DCPU.name=desktop CPU
+
+
+tile.BlockLaptop.name=Laptop
